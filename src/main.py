@@ -19,36 +19,21 @@ from ics import build_calendar
 
 DIST = Path(__file__).resolve().parent.parent / "dist"
 
-# 支持的语言：内部代码 -> API 的 hl 标签。默认语言（中文）输出到 dist 根目录。
+# 支持的语言：内部代码 -> API 的 hl 标签。
 LANGS = {
-    "zh": "zh-CN",
     "en": "en-US",
-    "ko": "ko-KR",
 }
-DEFAULT_LANG = "zh"
+DEFAULT_LANG = "en"
 
 # 日历名前缀（按语言）。
-CAL_PREFIX = {"zh": "LOL 赛程", "en": "LoL Schedule", "ko": "LoL 일정"}
+CAL_PREFIX = {"en": "LoL Schedule"}
 
 # 订阅分组：输出文件名 -> (赛区 slug 列表, {语言: 该组显示名})。
 OUTPUTS = {
-    "lpl": (["lpl"], {"zh": "LPL", "en": "LPL", "ko": "LPL"}),
-    "lck": (["lck"], {"zh": "LCK", "en": "LCK", "ko": "LCK"}),
-    "lec": (["lec"], {"zh": "LEC", "en": "LEC", "ko": "LEC"}),
-    "lcp": (["lcp"], {"zh": "LCP", "en": "LCP", "ko": "LCP"}),
-    # 文件名与显示名沿用 LTA：lta.ics 是已发布的订阅地址，改名会影响现有订阅者。
-    # LTA 于 2025 赛季后解散，美洲赛区回到 LCS / CBLOL，故 slug 指向这两个联赛。
-    "lta": (
-        ["lcs", "cblol-brazil"],
-        {"zh": "LTA（美洲）", "en": "LTA (Americas)", "ko": "LTA (아메리카)"},
-    ),
-    # 显示名同样保持不变（已有订阅者），新增的国际赛事只加 slug。
-    "intl": (
-        ["msi", "worlds", "first_stand", "ewc_lol", "demacia_cup"],
+     "schedule": (
+        ["lec", "msi", "worlds", "first_stand", "ewc_lol"],
         {
-            "zh": "国际赛 (MSI/Worlds/First Stand/EWC)",
-            "en": "International (MSI/Worlds/First Stand/EWC)",
-            "ko": "국제 대회 (MSI/Worlds/First Stand/EWC)",
+            "en": "My Custom Schedule",
         },
     ),
 }
@@ -56,15 +41,14 @@ OUTPUTS = {
 # 所有需要抓取的赛区。
 ALL_SLUGS = sorted({s for slugs, _ in OUTPUTS.values() for s in slugs})
 
-# 聚合订阅：所有赛区 + 国际赛合并到一个日历。复用 ALL_SLUGS，增删赛区时自动跟随。
+# 聚合订阅：所有赛区 + 国际赛合并到一个日历。
 OUTPUTS["all"] = (
     ALL_SLUGS,
-    {"zh": "全部赛区", "en": "All Leagues", "ko": "전체 리그"},
+    {"en": "All Leagues"},
 )
 
 # 保留最近 N 天已结束的比赛，便于回看比分。
-KEEP_COMPLETED_DAYS = 7
-
+KEEP_COMPLETED_DAYS = 365000
 
 def main() -> int:
     # 先抓取所有语言、所有赛区。任一语言任一赛区失败即整体放弃，保留旧文件。
