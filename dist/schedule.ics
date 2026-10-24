@@ -512,6 +512,15 @@ DESCRIPTION:League: MSI\nStage: Finals\nFormat: BO5\nMatch: T1 vs Gen.G Es
  ports
 END:VEVENT
 BEGIN:VEVENT
+UID:lolmatch-113475798006664582@lol-esports-calendar
+DTSTAMP:20251015T110000Z
+DTSTART:20251015T110000Z
+DTEND:20251015T120000Z
+SUMMARY:Worlds: TES 1-0 G2 (Swiss)
+DESCRIPTION:League: Worlds\nStage: Swiss\nFormat: BO1\nMatch: TOP ESPORTS 
+ vs G2 Esports
+END:VEVENT
+BEGIN:VEVENT
 UID:lolmatch-113475798006664584@lol-esports-calendar
 DTSTAMP:20251015T120000Z
 DTSTART:20251015T120000Z
@@ -2206,27 +2215,27 @@ UID:lolmatch-115660540726095029@lol-esports-calendar
 DTSTAMP:20261024T170000Z
 DTSTART:20261024T170000Z
 DTEND:20261024T180000Z
-SUMMARY:Worlds: AL vs TES (Swiss)
-DESCRIPTION:League: Worlds\nStage: Swiss\nFormat: BO1\nMatch: Anyone's Leg
- end vs TOP ESPORTS
+SUMMARY:Worlds: TES 1-0 AL (Swiss)
+DESCRIPTION:League: Worlds\nStage: Swiss\nFormat: BO1\nMatch: TOP ESPORTS 
+ vs Anyone's Legend
 END:VEVENT
 BEGIN:VEVENT
 UID:lolmatch-115660540726095021@lol-esports-calendar
 DTSTAMP:20261024T180000Z
 DTSTART:20261024T180000Z
 DTEND:20261024T190000Z
-SUMMARY:Worlds: CFO vs MKOI (Swiss)
-DESCRIPTION:League: Worlds\nStage: Swiss\nFormat: BO1\nMatch: CTBC Flying 
- Oyster vs Movistar KOI
+SUMMARY:Worlds: MKOI 1-0 CFO (Swiss)
+DESCRIPTION:League: Worlds\nStage: Swiss\nFormat: BO1\nMatch: Movistar KOI
+  vs CTBC Flying Oyster
 END:VEVENT
 BEGIN:VEVENT
 UID:lolmatch-115660540726095031@lol-esports-calendar
 DTSTAMP:20261024T190000Z
 DTSTART:20261024T190000Z
 DTEND:20261024T200000Z
-SUMMARY:Worlds: G2 vs LOS (Swiss)
-DESCRIPTION:League: Worlds\nStage: Swiss\nFormat: BO1\nMatch: G2 Esports v
- s LOS
+SUMMARY:Worlds: LOS vs G2 (Swiss)
+DESCRIPTION:League: Worlds\nStage: Swiss\nFormat: BO1\nMatch: LOS vs G2 Es
+ ports
 END:VEVENT
 BEGIN:VEVENT
 UID:lolmatch-115660540726095023@lol-esports-calendar
