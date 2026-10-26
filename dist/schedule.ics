@@ -2323,16 +2323,16 @@ UID:lolmatch-115660540726095049@lol-esports-calendar
 DTSTAMP:20261026T170000Z
 DTSTART:20261026T170000Z
 DTEND:20261026T180000Z
-SUMMARY:Worlds: CFO vs T1 (Swiss)
-DESCRIPTION:League: Worlds\nStage: Swiss\nFormat: BO1\nMatch: CTBC Flying 
- Oyster vs T1
+SUMMARY:Worlds: T1 1-0 CFO (Swiss)
+DESCRIPTION:League: Worlds\nStage: Swiss\nFormat: BO1\nMatch: T1 vs CTBC F
+ lying Oyster
 END:VEVENT
 BEGIN:VEVENT
 UID:lolmatch-115660540726095051@lol-esports-calendar
 DTSTAMP:20261026T180000Z
 DTSTART:20261026T180000Z
 DTEND:20261026T190000Z
-SUMMARY:Worlds: BLG vs KC (Swiss)
+SUMMARY:Worlds: BLG 1-0 KC (Swiss)
 DESCRIPTION:League: Worlds\nStage: Swiss\nFormat: BO1\nMatch: BILIBILI GAM
  ING vs Karmine Corp
 END:VEVENT
@@ -2341,9 +2341,9 @@ UID:lolmatch-115660540726095053@lol-esports-calendar
 DTSTAMP:20261026T190000Z
 DTSTART:20261026T190000Z
 DTEND:20261026T220000Z
-SUMMARY:Worlds: LOS vs TSW (Swiss)
-DESCRIPTION:League: Worlds\nStage: Swiss\nFormat: BO3\nMatch: LOS vs Team 
- Secret Whales
+SUMMARY:Worlds: TSW vs LOS (Swiss)
+DESCRIPTION:League: Worlds\nStage: Swiss\nFormat: BO3\nMatch: Team Secret 
+ Whales vs LOS
 END:VEVENT
 BEGIN:VEVENT
 UID:lolmatch-115660540726095057@lol-esports-calendar
