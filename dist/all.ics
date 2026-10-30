@@ -2395,9 +2395,9 @@ UID:lolmatch-115660540726095077@lol-esports-calendar
 DTSTAMP:20261030T200000Z
 DTSTART:20261030T200000Z
 DTEND:20261030T230000Z
-SUMMARY:Worlds: TLAW vs LOS (Swiss)
-DESCRIPTION:League: Worlds\nStage: Swiss\nFormat: BO3\nMatch: Team Liquid 
- Alienware vs LOS
+SUMMARY:Worlds: LOS vs TLAW (Swiss)
+DESCRIPTION:League: Worlds\nStage: Swiss\nFormat: BO3\nMatch: LOS vs Team 
+ Liquid Alienware
 END:VEVENT
 BEGIN:VEVENT
 UID:lolmatch-115660540726095081@lol-esports-calendar
